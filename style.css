@@ -1,0 +1,10 @@
+.Invisible {
+    display: none;
+}
+
+.Visible {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
