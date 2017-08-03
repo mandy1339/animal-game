@@ -86,8 +86,8 @@ function displayToScreen() {
 
 function main() {  
 
-    path += '/left/' + Object.keys(node.left)[0];              //Store id of build path
-    node.left[Object.keys(node.left)];                    //Get the object from left        
+    path += '/left/' + Object.keys(node.left)[0];               //Store id of build path
+    node.left[Object.keys(node.left)];                          //Get the object from left        
 
     console.log(path);
     console.log(node.left[Object.keys(node.left)]);
@@ -102,15 +102,19 @@ function main() {
 document.getElementById('yes').onclick = handleYes;
 document.getElementById('no').onclick = handleNo;
 
-function handleYes() {
+function handleYes(trigger) {
     yes = true;
+    trigger();
 }
 
-function handleNo() {
+function handleNo(trigger) {
     yes = false;
+    trigger();
 }
 
-
+function trigger() {
+    
+}
 
 
 
