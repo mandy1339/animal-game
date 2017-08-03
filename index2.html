@@ -13,49 +13,51 @@
     </head>
     <body>
 
-        <!-- HEADER  -->
-        <header>
-            <h1>ANIMAL GAME</h1>
-            <br />
-        </header>
-        
-
-        <!-- GAME CONTROLLERS (BUTTONS)  -->
-        <section id="game-controller">
-            <p id="questionP">question</p>
-            <button id="yes-btn">YES</button>
-            <button id="no-btn">NO</button>
-        </section>
-
-        <br />
-        <br />
-        
-
-        <!--  NEW ANIMAL INSERTION  -->
-        <!--class="Invisible"  -->
-        <div id="insert-div" class="Invisible">
-            <p id="prompt">Type a question that describes your animal, to which you can answer with <strong>"YES"</strong></p>
+        <div id="well-container" class="well">
+            <!-- HEADER  -->
+            <header>
+                <h1>ANIMAL GAME</h1>
+                <br />
+            </header>
             
-            <div id="new-q-div">
-                <label>New <br />Question</label>
-                <textarea cols="25" rows="2" placeholder="e.g. is it human friendly?"></textarea>
+
+            <!-- GAME CONTROLLERS (BUTTONS)  -->
+            <section id="game-controller">
+                <p id="questionP">question</p>
+                <button id="yes-btn">YES</button>
+                <button id="no-btn">NO</button>
+            </section>
+
+            <br />
+            <br />
+            
+
+            <!--  NEW ANIMAL INSERTION  -->
+            <!--class="Invisible"  -->
+            <div id="insert-div" class="Invisible">
+                <p id="prompt">Type a question that describes your animal, to which you can answer with <strong>"YES"</strong></p>
+                
+                <div id="new-q-div">
+                    <label>New <br />Question</label>
+                    <textarea cols="25" rows="2" placeholder="e.g. is it human friendly?"></textarea>
+                </div>
+                
+                <br />
+                
+                <div id="new-a-div">
+                    <label>New<br />Animal</label>
+                    <textarea id="yes-area" cols="10" rows="2" placeholder="e.g. dog"></textarea>
+                </div>
+                
+                <br />           
+                <br />
+                
+                <label> click here to add new question</label>
+                <br />
+                <button id="add-btn">add</button>
             </div>
             
-            <br />
-            
-            <div id="new-a-div">
-                <label>New<br />Animal</label>
-                <textarea id="yes-area" cols="10" rows="2" placeholder="e.g. dog"></textarea>
-            </div>
-            
-            <br />           
-            <br />
-            
-            <label> click here to add new question</label>
-            <br />
-            <button id="add-btn">add</button>
         </div>
-        
    
     </body>
     <script type="text/javascript" src="script1.js"></script>

@@ -41,3 +41,19 @@ header {
     margin: 0 auto;
     margin-bottom: 10px;
 }
+
+body {
+    background: url("./Octopus.jpg")no-repeat center center fixed;
+    /* background: url("https://mdbootstrap.com/images/regular/city/img%20(17).jpg")no-repeat center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#well-container {
+    margin-top: 50px !important;
+    background-color: rgba(254, 254, 254, 0.4);
+    width: 400px;
+    margin: 0 auto;
+}
