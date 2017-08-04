@@ -1,0 +1,29 @@
+{
+  "name": "animal-game",
+  "version": "1.0.0",
+  "description": "guesses your animal and remembers the one's it fails to guess",
+  "main": "core.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node core.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mandy1339/animal-game.git"
+  },
+  "keywords": [
+    "animal",
+    "game",
+    "machine",
+    "learning"
+  ],
+  "author": "Armando L. Toledo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mandy1339/animal-game/issues"
+  },
+  "homepage": "https://github.com/mandy1339/animal-game#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
