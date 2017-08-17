@@ -10,19 +10,20 @@ var path = 'question/mammal';   // used to read and write from the db
 
 
 
-
-
-
 // FIREBASE SET UP
 //------------------------------------------------------------------------
 //------------------------------------------------------------------------
 //------------------------------------------------------------------------
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Create configuration object
-//DELETED
-//DELETED
-//DELETED
-//ITS IN FIREBASE-SETUP
+var config = {
+    apiKey: "AIzaSyCQK1UqBY348E88CKP2kuyisWRn29zENEM",
+    authDomain: "fireclick2.firebaseapp.com",
+    databaseURL: "https://fireclick2.firebaseio.com",
+    projectId: "fireclick2",
+    storageBucket: "",
+    messagingSenderId: "1062287029196"
+};
 
 firebase.initializeApp(config);     // Inject configuration into firebase object
 console.log(firebase);              // Print the object for success confirmation
@@ -106,11 +107,11 @@ document.getElementById('add-btn').onclick = handleAdd;
 //------------------------------------------------------------------------
 function handleYes(trigger) {
     // if on a leaf, stop
-    if(!node.left && !node.right){  
+    if(!node.left && !node.right){
         alert('I did it!! can learn!!!!')
         location.reload();
     }
-    
+
     // if not a leaf, go to left child and update question
     else {
         node = node.left;                           //traverse left
@@ -146,7 +147,7 @@ function handleAdd() {
     // if all 2 textfields have been filled, save new entries to database
     if($('textarea')[0].value != "" && $('textarea')[1].value != "") {
         console.log('ready to do work');
-    
+
     var userQuestion = $('textarea')[0].value;
     var userAnimal = $('textarea')[1].value;
 
@@ -178,6 +179,6 @@ function handleAdd() {
 // ---------------------------------------------------------------------------
 // ---------------------------------------------------------------------------
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-readNode(path, displayToScreen);    // get snapshot object from the db, make node 
+readNode(path, displayToScreen);    // get snapshot object from the db, make node
                                     // point to it and display first question
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++                                    
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
