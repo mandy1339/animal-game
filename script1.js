@@ -19,14 +19,10 @@ var path = 'question/mammal';   // used to read and write from the db
 //------------------------------------------------------------------------
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Create configuration object
-var config = {
-    apiKey: "AIzaSyCQK1UqBY348E88CKP2kuyisWRn29zENEM",
-    authDomain: "fireclick2.firebaseapp.com",
-    databaseURL: "https://fireclick2.firebaseio.com",
-    projectId: "fireclick2",
-    storageBucket: "",
-    messagingSenderId: "1062287029196"
-};
+//DELETED
+//DELETED
+//DELETED
+//ITS IN FIREBASE-SETUP
 
 firebase.initializeApp(config);     // Inject configuration into firebase object
 console.log(firebase);              // Print the object for success confirmation
